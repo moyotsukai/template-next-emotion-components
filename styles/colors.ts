@@ -1,0 +1,7 @@
+export const backgroundColor = "#f5fcff"
+export const primaryColor = "#3071f2"
+export const primaryHeighlightColor = "#447ef2"
+export const primaryShadowColor = "rgba(0, 134, 230, 0.2)"
+export const textColor = "#000"
+export const supportingTextColor = "#3d4f5c"
+export const dividerColor = "#b8c4cc"
