@@ -10,20 +10,23 @@ type Props = {
 
 const Layout: React.FC<Props> = (props) => {
   return (
-    <React.Fragment>
+    <div css={layoutStyle}>
       <Header />
-      <div css={layoutStyle}>
+      <div css={contentStyle}>
         {props.children}
       </div>
       <Footer />
-    </React.Fragment>
+    </div>
   )
 }
 
 const layoutStyle = css`
   background-color: ${backgroundColor};
-  min-height: 100vh;
   padding: 0 10px;
+`
+
+const contentStyle = css`
+  min-height: 100vh;
 `
 
 export default Layout

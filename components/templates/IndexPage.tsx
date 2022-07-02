@@ -1,10 +1,12 @@
 import React from 'react'
-import { css } from '@emotion/react'
+import PageTitle from '../ui/PageTitle'
 
 const IndexPage: React.FC = () => {
   return (
     <div>
-      Hello!こんにちは！
+      <PageTitle>
+        ATaoIFANOFNOEAN
+      </PageTitle>
     </div>
   )
 }

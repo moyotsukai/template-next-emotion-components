@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 const Header: React.FC = () => {
   return (
-    <div css={headerStyle}>
+    <header css={headerStyle}>
       <Link href="/" passHref>
         <a css={linkStyle}>
           Title
         </a>
       </Link>
-    </div>
+    </header>
   )
 }
 
