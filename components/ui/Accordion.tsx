@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Divider from './Divider'
 import ToggleMarker from './ToggleMarker'
 import { dividerColor, primaryHeighlightColor } from '../../styles/colors'
+import { breakpoints } from '../../styles/constants'
 
 type Props = {
   title: string
@@ -85,7 +86,7 @@ const summaryContainerStyle = css`
   -webkit-tap-highlight-color: ${primaryHeighlightColor};
   width: 100%;
   padding: 15px 15px;
-  @media(min-width: 600px) {
+  @media(min-width: ${breakpoints.desktop}) {
     padding: 15px 25px;
   }
   &:focus {
@@ -105,7 +106,7 @@ const detailContainerStyle = css`
 const detailStyle = css`
   padding: 15px 15px;
   text-align: left;
-   @media(min-width: 600px) {
+   @media(min-width: ${breakpoints.desktop}) {
     padding: 15px 25px;
   }
 `

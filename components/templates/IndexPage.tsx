@@ -5,7 +5,7 @@ const IndexPage: React.FC = () => {
   return (
     <div>
       <PageTitle>
-        ATaoIFANOFNOEAN
+        Hello!
       </PageTitle>
     </div>
   )

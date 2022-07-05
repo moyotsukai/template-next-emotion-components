@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/react'
 import Link from 'next/link'
+import { breakpoints } from '../../styles/constants'
 
 const Header: React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const headerStyle = css`
   display: flex;
   align-items: center;
 
-   @media(min-width: 500px) {
+   @media(min-width: ${breakpoints.desktop}) {
     padding: 8px 20px 6px 20px;
   }
 `

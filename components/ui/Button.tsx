@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from '@emotion/react'
 import { primaryColor, primaryHeighlightColor, primaryShadowColor } from '../../styles/colors'
 import { motion } from 'framer-motion'
+import { toFontName } from '../../styles/Font.type'
 
 type Props = {
   onClick: (event: React.MouseEvent<HTMLInputElement>) => void
@@ -29,7 +30,7 @@ const buttonStyle = css`
   border: none;
   border-radius: 6px;
   color: #fff;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: ${toFontName("NotoSans")};
   font-size: 16px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   text-align: center;

@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 import React from 'react'
 import Link from 'next/link'
-import { primaryColor, textColor } from '../../styles/colors'
+import { primaryColor } from '../../styles/colors'
 import OpenInNewIcon from '../icons/OpenInNewIcon'
 
 type Props = {
