@@ -26,7 +26,7 @@ const layoutStyle = css`
 `
 
 const contentStyle = css`
-  padding: 0 10px;
+  padding: 0 12px;
   max-width: ${pageContentMaxWidth}px;
   min-height: 100vh;
   margin: 0 auto;
