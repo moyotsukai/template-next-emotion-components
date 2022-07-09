@@ -4,7 +4,7 @@ import React from 'react'
 const Seo: React.FC = () => {
   return (
     <Head>
-      <title>Shintaro Aoi Portfolio</title>
+      {/* <title>Shintaro Aoi Portfolio</title> */}
       <html lang="ja" />
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
