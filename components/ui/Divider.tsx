@@ -3,16 +3,22 @@ import { css } from '@emotion/react'
 import { dividerColor } from '../../styles/colors'
 import { breakpoints } from '../../styles/constants'
 
-const Divider: React.FC = () => {
+type Props = {
+  hideMargin?: boolean
+}
+
+const Divider: React.FC<Props> = (props) => {
   return (
     <div css={dividerStyle} />
   )
 }
-const dividerStyle = css`
+
+const dividerStyle = (hideMargin: boolean) => css`
   border-bottom: solid 1px ${dividerColor};
-  margin: 0 10px;
+  margin: ${hideMargin ? "0" : "0 10px"} ;
+
   @media(min-width: ${breakpoints.desktop}) {
-    margin: 0 20px;
+    margin: ${hideMargin ? "0" : "0 20px"} ;
   }
 `
 
