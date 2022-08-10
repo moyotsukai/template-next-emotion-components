@@ -95,16 +95,18 @@ const Select: React.FC<Props> = (props) => {
         ref={optionsContainerRef}
         css={optionsContainerStyle}
       >
-        {props.options.map((option, index) => (
-          <React.Fragment key={index}>
-            {index != 0 &&
-              <Divider hideMargin={true} />
-            }
-            <button onClick={() => onSelectOption(option)} css={optionStyle}>
-              {option}
-            </button>
-          </React.Fragment>
-        ))}
+        {isOpen &&
+          props.options.map((option, index) => (
+            <React.Fragment key={index}>
+              {index != 0 &&
+                <Divider hideMargin={true} />
+              }
+              <button onClick={() => onSelectOption(option)} css={optionStyle}>
+                {option}
+              </button>
+            </React.Fragment>
+          ))
+        }
       </motion.div>
     </div>
   )
