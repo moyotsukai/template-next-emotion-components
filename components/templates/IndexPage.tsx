@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import PageTitle from '../ui/PageTitle'
 import Select from '../ui/Select'
 import { css } from '@emotion/react'
+import Accordion from '../ui/Accordion'
 
 const IndexPage: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>("")

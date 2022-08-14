@@ -2,7 +2,7 @@ import React, { Dispatch, useEffect, useRef, useState } from 'react'
 import { css } from '@emotion/react'
 import { motion } from 'framer-motion'
 import Divider from './Divider'
-import { dividerColor } from '../../styles/colors'
+import { dividerColor, primaryColor } from '../../styles/colors'
 import ArrowIcon from '../icons/ArrowIcon'
 
 type Props = {
@@ -126,6 +126,7 @@ const selectStyle = css`
   text-align: left;
   cursor: pointer;
   display: inline;
+  color: ${primaryColor}
 `
 const selectContentStyle = css`
   display: flex;
@@ -150,10 +151,12 @@ const optionStyle = css`
   min-height: 42px;
   border: none;
   padding: 10px;
+  margin: 0;
   background-color: #fff;
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
   text-align: left;
   cursor: pointer;
+  color: #000;
 
   &:hover {
     background-color: #f3f3f3;
